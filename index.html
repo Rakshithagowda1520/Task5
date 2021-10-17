@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <title>Pokémon</title>
+  </head>
+  <body class="landing">
+    <div class="container">
+      <img class="squirtle" src="images\squirtle.png" alt="squirtle" />
+
+      <div class="main">
+        <div class="headerAccent">
+          <h1>Pokémon</h1>
+
+          <div class="actionLinks">
+            <a href="#">Create Account</a>
+            <a href="#">Log In</a>
+          </div>
+        </div>
+        <div class="pokeComponent">
+          <h2 class="pokeName indexPokeName"></h2>
+          <div class="pokemonDisplay">
+            <div class="spriteContainer">
+              <img class="currentSprite" src="" alt="" />
+            </div>
+            <div class="pokemonStats" >
+              <h3>Species: <span></span></h3>
+              <h3>Type: <span></span></h3>
+              <h3>HP: <span></span></h3>
+              <h3>Attack: <span></span></h3>
+              <h3>Defense: <span></span></h3>
+              <h3>Speed: <span></span></h3>
+              <h3>Ability 1: <span></span></h3>
+              <h3>Ability 2: <span></span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="charmander"
+        src="images\charmander.png"
+        alt="charmander"
+      />
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+  <script>
+    loadPokemon();
+  </script>
+</html>
