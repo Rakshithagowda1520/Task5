@@ -12,6 +12,8 @@ Login and Sign are temporarly disabled.
 
 FUN fact:
 The first Pokémon ever designed:RYDON
+
+
 It may be entry #112 in the Pokédex, but according to Ken Sugimori – the primary designer for the Pokémon games – Rhydon was the first Pokémon ever created. This is also the reason why sprites of Rhydon were so widespread in the original games. In that same interview, Sugimori mentions Lapras and Clefairy as some of the other earliest Pokémon designs to join Rhydon.
 
 
