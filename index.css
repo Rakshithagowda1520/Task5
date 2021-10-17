@@ -1,0 +1,395 @@
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
+abbr,acronym,address,big,cite,code,del,dfn,em,
+img,ins,kbd,q,s,samp,small,strike,strong,
+sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,
+aside,canvas,details,
+embed,figure,figcaption,footer,
+header,hgroup,menu,nav,
+output,ruby,section,summary,
+time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+article,aside,details,figcaption,
+figure,footer,header,hgroup,menu,nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Luckiest Guy Regular'), local('LuckiestGuy-Regular'), url(https://fonts.gstatic.com/s/luckiestguy/v9/_gP_1RrxsjcxVyin9l9n_j2hTd5z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fredoka One'), local('FredokaOne-Regular'), url(https://fonts.gstatic.com/s/fredokaone/v6/k3kUo8kEI-tA1RRcTZGmTlHGCaI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cabin'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v13/u-4x0qWljRw-Pd8w__g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Cabin Medium'), local('Cabin-Medium'), url(https://fonts.gstatic.com/s/cabin/v13/u-480qWljRw-PdfD3Ohluyw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url(https://fonts.gstatic.com/s/cabin/v13/u-480qWljRw-PdeL2uhluyw.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+.landing {
+  background-color: #e20c0c;
+}
+.container {
+  width: 100%;
+  max-width: 950px;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #050505;
+  border-right: 2px #f0e9e9f6 solid;
+  border-left: 2px #f1eeee solid;
+  display: flex;
+  justify-content: center;
+  overflow-y: visible;
+  z-index: 4;
+}
+@media (max-width: 780px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 675px) {
+  .container {
+    border: none;
+  }
+}
+.squirtle {
+  height: 200px;
+  width: auto;
+  margin-right: -19px;
+  z-index: 13;
+  align-self: flex-end;
+}
+@media (max-width: 780px) {
+  .squirtle {
+    margin-left: -148px;
+    margin-right: 0;
+  }
+}
+.charmander {
+  height: 200px;
+  width: auto;
+  margin-left: -21px;
+  z-index: 13;
+  align-self: flex-end;
+}
+@media (max-width: 780px) {
+  .charmander {
+    margin-left: 0;
+    margin-right: -152px;
+  }
+}
+.main {
+  position: relative;
+  background-image: url(../images/Pokemonbackground.jpg);
+  background-repeat: repeat;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 750px;
+  min-width: 400px;
+  border-left: 4px solid #f1eeee;
+  border-right: 4px solid #e2e2e2;
+}
+@media (max-width: 780px) {
+  .main {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+h1 {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 4rem;
+  color: #1c2a58;
+  line-height: 0.8;
+}
+@media (max-width: 780px) {
+  h1 {
+    font-size: 3.5rem;
+    margin: 1px 10px;
+  }
+}
+.headerAccent {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+  border-top: solid 2px #0c0c0c;
+  border-bottom: solid 2px #0c0c0c;
+}
+.actionLinks {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(1, 10, 49, 0.8);
+  border-top: solid 2px #0c0c0c;
+}
+.actionLinks a {
+  margin: 0 15px;
+  font-family: 'Cabin', sans-serif;
+  text-decoration: none;
+  color: #f1b717;
+  font-weight: 500;
+}
+.haunterCTA {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 245px;
+  min-height: 180px;
+  bottom: 70px;
+  position: relative;
+  z-index: 100;
+}
+@media (max-width: 780px) {
+  .haunterCTA {
+    left: 0;
+    top: -45px;
+    max-width: 225px;
+    max-height: 330px;
+  }
+}
+.haunterCTA h2 {
+  font-family: 'Cabin', sans-serif;
+  color: #0c0c0c;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: 55%;
+}
+.pokeComponent {
+  border: solid 2px #0c0c0c;
+  width: 550px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+}
+@media (max-width: 900px) {
+  .pokeComponent {
+    width: 460px;
+  }
+}
+@media (max-width: 780px) {
+  .pokeComponent {
+    width: 420px;
+    height: 465px;
+  }
+}
+.pokeComponent .indexPokeName {
+  font-family: 'Cabin', sans-serif;
+  color: #0c0c0c;
+  font-size: 2.6rem;
+  padding: 4px 0;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  border-bottom: solid 2px #0c0c0c;
+  background-color: rgba(99, 115, 204, 0.8);
+}
+.pokeComponent .pokemonDisplay {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 780px) {
+  .pokeComponent .pokemonDisplay {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.pokeComponent .pokemonDisplay .spriteContainer {
+  height: 275px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5px;
+}
+.pokeComponent .pokemonDisplay .spriteContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 780px) {
+  .pokeComponent .pokemonDisplay .spriteContainer {
+    width: 100%;
+    height: 245px;
+    padding: 5px;
+  }
+}
+.pokeComponent .pokemonDisplay .pokemonStats {
+  width: 250px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+@media (max-width: 780px) {
+  .pokeComponent .pokemonDisplay .pokemonStats {
+    margin-top: 4px;
+    width: 100%;
+    height: 155px;
+    justify-content: space-around;
+  }
+}
+.pokeComponent .pokemonDisplay .pokemonStats h2{
+  font-family: 'Cabin', sans-serif;
+  color: #0c0c0c;
+  font-size: 1.3rem;
+  margin: 2px 0;
+  font-weight: 500;
+}
+@media (max-width: 780px) {
+  .pokeComponent .pokemonDisplay .pokemonStats h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+.makeYellow {
+  background-color: #f1b717;
+}
+.containerDemo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 950px;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: url(../images/pikachuPaper.png);
+  background-repeat: repeat;
+  border-left: 2px solid #0c0c0c;
+  border-right: 2px solid #0c0c0c;
+}
+.demoPokeName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: solid 2px #0c0c0c;
+  background-color: rgba(99, 115, 204, 0.8);
+}
+.demoPokeName h2 {
+  font-family: 'Cabin', sans-serif;
+  color: #0c0c0c;
+  font-size: 2.6rem;
+  padding: 4px 0;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+}
+.evolveButton {
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 2px 2px black;
+  background-color: #f1b717;
+  border: 1px solid #1c2a58;
+  margin: 10px 20px;
+  padding: 5px 15px 0 15px;
+  color: #1c2a58;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: none;
+}
+.pokeballContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.pokeball img {
+  width: inherit;
+}
+.pokeball {
+  cursor: pointer;
+  width: 200px;
+  height: 293px;
+  position: relative;
+}
+@media (max-width: 700px) {
+  .pokeball {
+    width: 150px;
+    height: 220px;
+  }
+}
+.positionAbsolute {
+  position: absolute;
+}
+.pokeballTop {
+  top: 93px;
+}
+@media (max-width: 700px) {
+  .pokeballTop {
+    top: 70px;
+  }
+}
